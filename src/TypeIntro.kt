@@ -22,3 +22,13 @@ fun main(args: Array<String>) {
     println(playerName)
 
 }
+/*// count
+val numLetters="Mississippi".count()
+print(numLetters)
+//11
+val numLetters="Mississippi".count({letter ->
+    letter=='s'
+})
+print(numLetters)
+        //4
+*/
