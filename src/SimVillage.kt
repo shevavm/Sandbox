@@ -1,9 +1,12 @@
 //5.1
 fun main(args: Array<String>) {
     //5.2 println({
-    val greetingFunction: ()->String= {
+    //5.3 val greetingFunction: ()->String= {
+    val greetingFunction: (String)->String= {playerName ->
         val currentYear = 2018
-        "Welcome to SimVillage, Mayor! (copiright $currentYear)"
+        //5.3 "Welcome to SimVillage, Mayor! (copiright $currentYear)"
+        "Welcome to SimVillage, $playerName! (copiright $currentYear)"
     }//5.2 }())
-    println(greetingFunction())
+    //5.3 "Guyal"
+    println(greetingFunction("Guyal"))
 }
