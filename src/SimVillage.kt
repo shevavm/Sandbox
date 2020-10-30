@@ -21,7 +21,8 @@ fun main(args: Array<String>) {
 
     //5.8 ? runSimulation ("Guyal", greetingFunction)
 }
-fun runSimulation (playerName: String, greetingFunction: (String, Int) -> String) {
+//5.9 inline
+inline fun runSimulation (playerName: String, greetingFunction: (String, Int) -> String) {
     val numBuildings = (1..3).shuffled().last() //випадковий вибір 1,2 або 3
     println(greetingFunction(playerName, numBuildings))
 }
